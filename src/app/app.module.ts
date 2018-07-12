@@ -8,6 +8,7 @@ import { BloodDonarComponent } from './blood-donar/blood-donar.component';
 import { CorpDonarComponent } from './corp-donar/corp-donar.component';
 import { FilterPipe } from './filter.pipe';
 import { AdderComponent } from './adder/adder.component';
+import { ShadowDirective } from './shadow.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AdderComponent } from './adder/adder.component';
     BloodDonarComponent,
     CorpDonarComponent,
     FilterPipe,
-    AdderComponent
+    AdderComponent,
+    ShadowDirective
   ],
   imports: [
     BrowserModule

@@ -1,8 +1,8 @@
 <table class="table table-bordered">
-    <tr *ngFor='let eachDonar of requestList |filter: "bloodGroup":"opos"'>
-        <td>{{eachDonar.bloodGroup | uppercase}}</td>
-        <td>{{eachDonar.requiredDate | date: ' medium '}}</td>
-        <td>{{eachDonar.handlingCharges | currency:'EUR ':'symbol ':'3.2-2 '}}
+    <tr *ngFor='let eachDonar of requestList |filter: "handlingCharges":590.245'>
+        <td appShadow [prefColor]="'green'">{{eachDonar.bloodGroup | uppercase }}</td>
+        <td appShadow [prefColor]="'magenta'">{{eachDonar.requiredDate | date: "medium"}}</td>
+        <td>{{eachDonar.handlingCharges | currency:"EUR":"symbol":"3.2-2"}}
         </td>
     </tr>
 

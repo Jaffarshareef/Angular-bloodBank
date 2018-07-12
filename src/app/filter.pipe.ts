@@ -16,7 +16,7 @@ transform(collection: any[], field: string, value: any): any[] {
   return collection.filter(list =>
   list[field].toLowerCase().includes(value.toLowerCase()));
   } else {
-    return collection.filter(item => item.field.indexOf([value]) !== -1);
+    return collection.filter(item => item[field] === value);
   }
 
 }
