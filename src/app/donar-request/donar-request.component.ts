@@ -9,13 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class DonarRequestComponent implements OnInit {
 
   requestList: DonationRequest[];
-  constructor() { 
+  constructor(){ 
 
     this.requestList = [
       
-      {bloodGroup: 'opos', requiredDate: new Date(2018, 08, 21), handlingCharges: 890.245},
-      {bloodGroup: 'bpos', requiredDate: new Date(2018, 09, 21), handlingCharges: 890.245},
-      {bloodGroup: 'bpos', requiredDate: new Date(2018, 09, 21), handlingCharges: 890.245}
+      {'bloodGroup': 'opos', 'requiredDate': '2018-08-20', 'handlingCharges':890.245}
+      {'bloodGroup': 'bpos', 'requiredDate': '2018-08-20', 'handlingCharges':590.245}
+      {'bloodGroup': 'bpos', 'requiredDate': '2018-08-20', 'handlingCharges':790.245}
 
     ];
   }

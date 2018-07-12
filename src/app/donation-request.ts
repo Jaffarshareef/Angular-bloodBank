@@ -1,4 +1,4 @@
 export interface DonationRequest {
-    bloodGroup: string; requiredDate: Date;
+    bloodGroup: string; requiredDate: string;
     handlingCharges: number;
 }
