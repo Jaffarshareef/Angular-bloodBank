@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./corp-donar.component.css']
 })
 export class CorpDonarComponent implements OnInit {
-
+  list: any[]
   constructor() { }
 
   ngOnInit() {
