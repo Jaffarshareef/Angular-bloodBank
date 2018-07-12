@@ -1,4 +1,6 @@
+import { BloodDonarComponent } from './blood-donar/blood-donar.component';
 import { Component } from '@angular/core';
+import { CorpDonarComponent } from './corp-donar/corp-donar.component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  comp = CorpDonarComponent;
 }
