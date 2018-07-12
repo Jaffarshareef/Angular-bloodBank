@@ -8,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DonarRequestComponent implements OnInit {
 
+  request: DonationRequest ={
+    bloodGroup : '',
+    handlingCharges: 0.0,
+    requiredDate: ''
+  };
+  groups = ['opos', 'bpos', 'apos', 'aneg', 'oneg' ,'bneg' ,'abpos' ,'abneg'];
   requestList: DonationRequest[];
   constructor(){ 
 
@@ -23,4 +29,9 @@ export class DonarRequestComponent implements OnInit {
   ngOnInit() {
   }
 
+  submit(frmData){
+     
+    this.request = frmData;
+     console.log(frmData);
+  }
 }

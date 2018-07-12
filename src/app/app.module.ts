@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { DonationTipsComponent } from './donation-tips/donation-tips.component';
@@ -22,7 +23,7 @@ import { ShadowDirective } from './shadow.directive';
     ShadowDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule , FormsModule, ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

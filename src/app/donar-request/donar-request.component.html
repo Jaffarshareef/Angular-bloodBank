@@ -1,9 +1,23 @@
+<form #frm='ngForm' (ngSubmit)='submit(frm.value)'>
+    <label for="">Blood Group</label>
+    <select [ngModel]='request.bloodGroup' name='bloodgroup'>
+      <option *ngFor="let eachGroup of groups"
+            value={{eachGroup}}>{{eachGroup}}</option>
+      </select>
+    <label for="">Required Date</label>
+    <input type="date" [ngModel]='request.requiredDate' name='requiredDated'>
+    <label for="">Handling Charges</label>
+    <input type="text" [ngModel]='request.handlingCharges' name='handlingCharges'>
+    <input type="submit" value="Request">
+</form>
 <table class="table table-bordered">
-    <tr *ngFor='let eachDonar of requestList |filter: "handlingCharges":590.245'>
-        <td appShadow [prefColor]="'green'">{{eachDonar.bloodGroup | uppercase }}</td>
-        <td appShadow [prefColor]="'magenta'">{{eachDonar.requiredDate | date: "medium"}}</td>
-        <td>{{eachDonar.handlingCharges | currency:"EUR":"symbol":"3.2-2"}}
+    <tr *ngFor="let eachDonar of requestList |filter: 'bloodGroup':''">
+        <td appShadow [prefColor]=" ' green ' ">{{eachDonar.bloodGroup | uppercase }}</td>
+        <td appShadow [prefColor]=" 'magenta ' ">{{eachDonar.requiredDate | date: "medium "}}</td>
+        <td>{{eachDonar.handlingCharges | currency:"EUR ":"symbol ":"3.2-2 "}}
         </td>
     </tr>
 
 </table>
+
+{{request | json}}
