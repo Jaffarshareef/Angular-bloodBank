@@ -13,9 +13,9 @@ export class DonarRequestComponent implements OnInit {
 
     this.requestList = [
       
-      {'bloodGroup': 'opos', 'requiredDate': '2018-08-20', 'handlingCharges':890.245}
-      {'bloodGroup': 'bpos', 'requiredDate': '2018-08-20', 'handlingCharges':590.245}
-      {'bloodGroup': 'bpos', 'requiredDate': '2018-08-20', 'handlingCharges':790.245}
+      {'bloodGroup': 'opos', 'requiredDate': '2018-08-20', 'handlingCharges': 890.245},
+      {'bloodGroup': 'bpos', 'requiredDate': '2018-08-20', 'handlingCharges': 590.245},
+      {'bloodGroup': 'bpos', 'requiredDate': '2018-08-20', 'handlingCharges': 790.245}
 
     ];
   }

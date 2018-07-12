@@ -1,6 +1,9 @@
-<p>
-    Corporate-donar works!
-</p>
-<ul class="list-group">
-    <li *ngFor='let eachItem of list' class=' list-group-item-dark list-group-item'>{{eachItem}}</li>
-</ul>
+<table class="table table-bordered">
+    <tr *ngFor='let eachDonar of requestList |filter: "bloodGroup":"opos"'>
+        <td>{{eachDonar.bloodGroup | uppercase}}</td>
+        <td>{{eachDonar.requiredDate | date: ' medium '}}</td>
+        <td>{{eachDonar.handlingCharges | currency:'EUR ':'symbol ':'3.2-2 '}}
+        </td>
+    </tr>
+
+</table>
